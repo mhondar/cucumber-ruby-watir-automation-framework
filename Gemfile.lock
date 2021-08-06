@@ -1,0 +1,210 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    appium_lib (10.4.0)
+      appium_lib_core (~> 3.2)
+      nokogiri (~> 1.8, >= 1.8.1)
+      tomlrb (~> 1.1)
+    appium_lib_core (3.2.1)
+      faye-websocket (~> 0.10.0)
+      selenium-webdriver (~> 3.14, >= 3.14.1)
+    archive-zip (0.12.0)
+      io-like (~> 0.3.0)
+    ast (2.4.0)
+    aws-eventstream (1.1.1)
+    aws-partitions (1.442.0)
+    aws-sdk-core (3.113.1)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.239.0)
+      aws-sigv4 (~> 1.1)
+      jmespath (~> 1.0)
+    aws-sdk-kms (1.43.0)
+      aws-sdk-core (~> 3, >= 3.112.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.93.0)
+      aws-sdk-core (~> 3, >= 3.112.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.1)
+    aws-sigv4 (1.2.3)
+      aws-eventstream (~> 1, >= 1.0.2)
+    builder (3.2.3)
+    c21e (1.1.9)
+    childprocess (1.0.1)
+      rake (< 13.0)
+    chromedriver-helper (2.1.1)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
+    chunky_png (1.3.11)
+    cucumber (2.2.0)
+      builder (>= 2.1.2)
+      cucumber-core (~> 1.3.0)
+      cucumber-wire (~> 0.0.1)
+      diff-lcs (>= 1.1.3)
+      event-bus (~> 0.1.0)
+      gherkin3 (~> 3.1.0)
+      multi_json (>= 1.7.5, < 2.0)
+      multi_test (>= 0.1.2)
+    cucumber-core (1.3.1)
+      gherkin3 (~> 3.1.0)
+    cucumber-messages (2.1.2)
+      google-protobuf (>= 3.2, <= 3.7)
+    cucumber-wire (0.0.1)
+    diff-lcs (1.3)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    event-bus (0.1.0)
+    eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
+    execjs (2.7.0)
+    facets (3.1.0)
+    faye-websocket (0.10.9)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.1)
+    ffi (1.11.1)
+    ffi (1.11.1-x64-mingw32)
+    fileutils (1.2.0)
+    gherkin (6.0.17)
+      c21e (~> 1.1.9)
+      cucumber-messages (~> 2.1.2)
+    gherkin3 (3.1.2)
+    google-protobuf (3.7.0)
+    google-protobuf (3.7.0-x64-mingw32)
+    headless (2.3.1)
+    http-accept (1.7.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    io-like (0.3.0)
+    jaro_winkler (1.5.3)
+    jmespath (1.4.0)
+    json (2.2.0)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.0225)
+    mini_mime (1.1.0)
+    mini_portile2 (2.4.0)
+    multi_json (1.13.1)
+    multi_test (0.1.2)
+    netrc (0.11.0)
+    nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.3-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
+    os (1.0.1)
+    parallel (1.17.0)
+    parallel_tests (2.29.1)
+      parallel
+    parser (2.6.3.0)
+      ast (~> 2.4.0)
+    psych (3.1.0)
+    psych (3.1.0-x64-mingw32)
+    rainbow (3.0.0)
+    rake (12.3.2)
+    regexp_parser (1.6.0)
+    report_builder (1.8)
+      json (>= 1.8.1)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rest-client (2.1.0-x64-mingw32)
+      ffi (~> 1.9)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.2)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.4)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.2)
+    rubocop (0.74.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    ruby-progressbar (1.10.1)
+    rubyzip (1.2.3)
+    selenium-webdriver (3.142.3)
+      childprocess (>= 0.5, < 2.0)
+      rubyzip (~> 1.2, >= 1.2.2)
+    statsd-ruby (1.4.0)
+    syntax (1.2.2)
+    titleize (1.4.1)
+    tomlrb (1.2.8)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x64-mingw32)
+    unicode-display_width (1.6.0)
+    watir (6.16.5)
+      regexp_parser (~> 1.2)
+      selenium-webdriver (~> 3.6)
+    watir-extensions-element-screenshot (0.0.3)
+      chunky_png
+      watir-webdriver
+    watir-scroll (0.4.0)
+      watir (>= 6.0)
+    watir-webdriver (0.9.9)
+      selenium-webdriver (>= 2.46.2)
+    webdriver-user-agent (7.6)
+      facets
+      json
+      os
+      psych
+      selenium-webdriver (>= 3.4.0)
+    webdrivers (4.1.1)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.0)
+      selenium-webdriver (>= 3.0, < 4.0)
+    websocket-driver (0.7.1)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.4)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  appium_lib
+  aws-sdk-s3
+  chromedriver-helper
+  cucumber
+  execjs
+  ffi
+  fileutils
+  gherkin
+  headless
+  json
+  mail
+  nokogiri
+  parallel_tests
+  report_builder
+  rest-client
+  rspec
+  rubocop
+  selenium-webdriver
+  statsd-ruby
+  syntax
+  titleize
+  watir
+  watir-extensions-element-screenshot
+  watir-scroll
+  watir-webdriver
+  webdriver-user-agent
+  webdrivers
+
+BUNDLED WITH
+   2.1.4

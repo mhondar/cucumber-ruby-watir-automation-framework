@@ -1,0 +1,8 @@
+    {
+        "title_home": "//h1[contains(text(), \"Elige tu celular con el plan más conveniente en r-phone\")]",
+        "title_btn_equipo_plan" : "//span[text()=\"Equipo + Plan\"]",
+        "btn_equipo_plan": "//div[@class=\"MuiGrid-root MuiGrid-item\"]",
+        "title_catalogo":"//h1[contains(text(), \"Elige tu celular con el plan más conveniente en r-phone\")]",
+        "products_container": "section.jss24:nth-child(1)",
+        "rphone_container": "rphone-container"
+    }

@@ -1,0 +1,10 @@
+{
+    "text_numero_tarjeta": "//input[@id=\"algpf-cardnumber-input-0\"]",
+    "text_fecha_exp":"//input[@id=\"algpf-expirydate-input-0\"]",
+    "text_cod_seguridad":"//input[@id=\"algpf-securitycode-input-0\"]",
+    "cmb_tipo_docu":"//select[@id=\"algpf-documenttype-input-1\"]",
+    "opt_dni":"//option[@value=\"DNI\"]",
+    "text_num_documento":"//input[@id=\"algpf-documentnumber-input-1\"]",
+    "btn_pagar":"//div[@id=\"div-button-pay\"]",
+    "chk_ingreso_datos":"//h2[@id=\"messagePayTitle\"]"    
+}

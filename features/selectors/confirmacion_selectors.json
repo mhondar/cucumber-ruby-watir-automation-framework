@@ -1,0 +1,16 @@
+{
+    "title_conf": "//h3[starts-with(@class, \"ConfirmationDisplay_confirmationTitle\")]",
+    "subtotal": "//span[@data-id=\"cart/subtotal\"]",
+    "despacho": "//span[@data-id=\"cart/total-shipping\"]",
+    "total_normal": "//span[@data-id=\"cart/total-normal\"]",
+    "total_tarjeta_ripley": "//span[@data-id=\"cart/total-ripley-card\"]",
+    "chk_acepto": "//label[starts-with(@class, \"Checkbox_checkbox\")]",
+    "bt_continuar": "//button[starts-with(@class, \"ContinueButton_continueButton\")]", 
+    "btn_modificar_despacho": "//span[contains(text(), \"Despacho\")]/following-sibling::button",
+    "tarjeta_de_debito": "//a[@class=\"method\"][1]",
+    "btn_modificar_pago": "//span[contains(text(), \"Pago\")]/following-sibling::button", 
+    "btn_add_products": "//div[starts-with(@class, \"Cart_totals\")]//a[contains(text(), \"Agregar más productos\")]",
+    "mobile": {
+        "bt_continuar": "//div[starts-with(@class, \"BarBottom_container\")]//button[starts-with(@class, \"ContinueButton_continueButton\")]" 
+    }
+}

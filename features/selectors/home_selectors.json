@@ -1,0 +1,64 @@
+{
+    "navigation_header": {
+        "btn_inicio_session": "//a/span[@class=\"my-account__desktop\"]",
+        "in_username": "//div[@class=\"ripley-input \"]/input[@name=\"ws_username\"]",
+        "in_password": "//div[@class=\"ripley-input \"]/input[@name=\"password\"]",
+        "lnk_forgotpass": "//div[@class=\"text-center credentials__recover-password-link\"]//a[@class=\"credentials__link\"]",
+        "btn_loadin": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "btn_outline": "//button[@class=\"btn-loading  btn-outline-alt\"]",
+        "in_search_bar": "//input[@type=\"search\"]",
+        "btn_bolsa": "//li[@class=\"ripley-header__shopping-bag-container\"]//a",
+        "btn_crear_cuenta": "//button[contains(text(), \"Crea tu cuenta\")]",
+        "btn_tu_cuenta": "//a[contains(text(), \"Mi cuenta\")]",
+        "lbl_mi_cuenta": "//span[contains(text(), \"Mi Cuenta\")]",
+        "btn_actualizar_datos": "//a[contains(text(), \"Actualizar tus datos\")]",
+        "btn_menu_categorias": "//div[@class=\"ripley-header__menu-button-container\"]",
+        "btn_ver_todo": "//span[@class=\"category-view-all\"]",
+        "button_outline": "//button[@class=\"btn-loading  btn-outline-alt\"]"
+    },
+    "product_item": {
+        "bt_add_bolsa": "//button[@class=\"btn-loading  btn-primary btn-loading js-buy-button\"]"
+    },
+    "no_result_pages": {
+        "no_result_sku": "//h2[contains(text(), \"La página que buscas ya no se encuentra disponible.\")]",
+        "no_result_texto": "//h3[contains(text(), \"No se encontraron resultados\")]"
+    },
+    "popup": {
+        "btn_cerrar": "onesignal-slidedown-cancel-button",
+        "contenedor": "//div[contains(text(), \"¿Deseas recibir notificaciones?\")]",
+        "actualiza_datos_personales": "//div[contains(@class, \"MuiDialog-paperScrollPaper MuiDialog-paperWidthLg MuiPaper-elevation24 MuiPaper-rounded\")]/div/h2/button"
+    },
+    "registro_persona": {
+        "input_nombre": "//input[@name=\"firstName\"]",
+        "input_apellido": "//input[@name=\"lastName\"]",
+        "input_rut": "//input[@name=\"ws_username\"]",
+        "input_email": "//input[@name=\"email\"]",
+        "input_re_email": "//input[@name=\"email2\"]",
+        "input_password": "//input[@name=\"password\"]",
+        "input_conf_password": "//input[@name=\"checkPassword\"]",
+        "btn_registrarme": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "msg_ya_registrado": "//h2[@class=\"credentials__register-already-registered\"]",
+        "lnk_registrar": "//div[@class=\"credentials__register-link\"]//a[@class=\"credentials__link\"]"
+    },
+    "login_messages": {
+        "olvido_pass": "//p[@class=\"message\" and contains(text(), \"¿Olvidaste tu contraseña?\")]"
+    },
+    "registred_mensg": {
+        "user_registrado": "//h2[@class=\"credentials__register-already-registered\" and contains(text(), \"Parece que ya estás registrado\")]"
+    },
+    "mobile": {
+        "search_button": "//button[@class=\"mobile-search__btn\"]",
+        "btn_inicio_session": "//div[@class=\"my-account__box\"]",
+        "in_username": "//div[@class=\"hidden-md-up\"]//div[@class=\"ripley-input \"]/input[@name=\"ws_username\"]",  
+        "in_password": "//div[@class=\"hidden-md-up\"]//div[@class=\"ripley-input \"]/input[@name=\"password\"]",
+        "btn_loadin": "//div[@class=\"hidden-md-up\"]//button[@class=\"btn-loading  btn-ripley\"]",
+        "btn_outline": "//div[@class=\"hidden-md-up\"]//button[@class=\"btn-loading  btn-outline-alt\"]",
+        "btn_close": "//a[@class=\"close-button\"]",
+        "in_search_bar": "//input[@class=\"js-mobile-search-bar\"]",
+        "lbl_mi_cuenta": "//div[@class=\"my-account__box\"]",
+        "btn_crear_cuenta": "//div[@class=\"hidden-md-up\"]//button[contains(text(), \"Crea tu cuenta\")]",
+        "upArrowMobile":"//i[@class=\"fa fa-chevron-left \"]",
+        "closeMessageMobile":"//span[text()=\"X\"]"
+    },
+    "aceptar_cookie": "//div[@class=\"cookies-disclaimer\"]//button"
+}

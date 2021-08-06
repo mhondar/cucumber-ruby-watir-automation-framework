@@ -1,0 +1,49 @@
+{
+    "comun": {
+        "result_msg_catalogo": "//div[@class=\"catalog-page__results-text\"]/div/div[1]"
+    },
+    "search": {
+        "result_msg": "//div[@class=\"results-text\"]",
+        "list_item_product": "//div[@class=\"catalog-container\"]//a[starts-with(@class,\"catalog-product-item catalog-product-item__container\")]",
+        "no_search": "//h3[contains(text(), \"No se encontraron resultados\")]"
+    },
+    "quickview": {
+        "btn_cerrar": "//button[@class=\"simple-modal-close-button\"]",
+        "mas_detalles": "//a[@id=\"product-page-button\"]",
+        "btn_menos": "//button[@class=\"stepper-control stepper-control-decrease\"]",
+        "btn_mas": "//button[@class=\"stepper-control stepper-control-increase\"]",
+        "lbl_cantidad": "//div[@class=\"stepper-value\"]",
+        "btn_seleciona_opciones": "//button[@disabled and contains(text(), \"Selecciona opciones\")]",
+        "color_opcion_list": "//div[@class=\"product-colors-option-outer\"]",
+        "talla_opcion_list": "//div[@class=\"radio-item js-check-product\"]",
+        "btn_add_bolsa": "//button[@class=\"btn-loading  btn-primary btn-loading js-buy-button\" and contains(text(), \"Agregar a la bolsa\")]"
+    },
+    "result_3": {
+        "btn_filtrar": "//div[2]//div[2]//button[@class=\"btn-clear slideout-filters-toggle catalog-filters-toggle\"]",
+        "btn_pagina_siguiente_sup_deshabilitada": "//div[@id=\"catalog-page\"]//div[2]//div[2]/div[@class=\"header-top-container\"]//ul[@class=\"pagination\"]/li/a[@class=\"is-disabled\"]/span[contains(text(), \"»\")]",
+        "btn_pagina_siguiente_sup_habilitada": "//div[@id=\"catalog-page\"]//div[2]//div[2]/div[@class=\"header-top-container\"]//ul[@class=\"pagination\"]/li/a/span[contains(text(), \"»\")]",
+        "limpiar_filtros": "//div[@id=\"catalog-page\"]//div[2]/div[2]//a[contains(text(), \"Limpiar Filtros\")]",
+        "sel_ordenar": "//div[2]/div/div/div/div[1]/div/div/select[@name=\"orderBy\"]",
+        "btn_pagina_siguiente_inf_deshabilitada": "//div[@id=\"catalog-page\"]//div[2]//div[2]/div[@class=\"header-top-container\"]//ul[@class=\"pagination\"]/li/a[@class=\"is-disabled\"]/span[contains(text(), \"»\")]",
+        "btn_pagina_siguiente_inf_habilitada": "//div[@class=\"catalog-page__footer-pagination\"]//span[contains(text(), \"»\")]",
+        "btn_aplicar_filtro":"//button[@class=\"btn btn-submit-filter\"]" 
+    },
+    "mobile": {
+        "result_msg_catalogo": "//section[@class=\"catalog-page__search-results\"]/div/div/div", 
+        "btn_aplicar_filtro": "//div[@class=\"slideout anm-slideout-slidein\"]//button[@class=\"btn btn-submit-filter\"]",
+        "btn_second_page":"//ul[@class=\"pagination\"]/li/a[@href=\"?page=2\"]",
+        "btn_pagina_siguiente_sup_habilitada": "//div[@id=\"catalog-page\"]/div/div[2]/div[@class=\"catalog-page__footer-pagination\"]/div/ul/li[3]/a/span[contains(text(), \"»\")]",
+        "btn_second_page_active": "//ul[@class=\"pagination\"]/li/div/select[@name=\"pagination\"]/option[@value=\"page=2\" and @disabled=\"\"]"
+    },
+    "result_4": {
+        "limpiar_filtros": "//div[@id=\"catalog-page\"]//div[2]//section[@class=\"applied-facets\"]//a[contains(text(), \"Limpiar Filtros\")]  ",
+        "sel_ordenar": "//div[2]//div[2]/div/select[@name=\"orderBy\"]",
+        "btn_pagina_siguiente_inf_deshabilitada": "//div[@class=\"catalog-page__footer-pagination\"]//a[@class=\"is-disabled\"]/span[contains(text(), \"»\")]",
+        "btn_pagina_siguiente_inf_habilitada": "//div[@class=\"catalog-page__footer-pagination\"]//span[contains(text(), \"»\")]",
+        "btn_second_page":"//ul[@class=\"pagination\"]//a[text()=\"2\"]",
+        "btn_second_page_active":"//ul[@class=\"pagination\"]//a[text()=\"2\" and @class=\"is-active\"]",
+        "btn_aplicar_filtro":"//div[@class=\"col-md-3 hidden-md-down\"]//button[@class=\"btn btn-submit-filter\"]" 
+    },
+    "aceptar_cookie": "//div[@class=\"cookies-disclaimer\"]//button"
+}
+

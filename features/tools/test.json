@@ -1,0 +1,24 @@
+{
+    "format": "CUCUMBER",
+    "attachFile": true,
+    "isZip": false,
+    "environment": "Production",
+    "build": "1",
+    "fields": {
+        "testCycle": {
+            "labels": [],
+            "components": [],
+            "priority": "High",
+            "status": "Done",
+            "browser": "chrome",
+            "device": "web",
+            "summary": "Test Cycle Automatico para QMETRY_TEST"
+        },
+        "testCase": {
+            "labels": [],
+            "components": [],
+            "priority": "High",
+            "status": "Done"
+        }
+    }
+}

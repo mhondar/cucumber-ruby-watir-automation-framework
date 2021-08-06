@@ -1,0 +1,17 @@
+{
+    "login": {
+        "username": "//input[@name=\"ws_username\"]",
+        "password": "//input[@name=\"password\"]",
+        "olvido_password": "//div[@class=\"text-center credentials__recover-password-link\"]/a",
+        "iniciar_sesion": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "paga_ripley": "",
+        "crea_tu_cuenta": "//button[contains(text(), \"Crea tu cuenta\")]"
+    },
+    "invitado": {
+        "nombre": "//input[@name=\"firstname\"]",
+        "apellido": "//input[@name=\"lastname\"]",
+        "rut": "//input[@name=\"nationalID\"]",
+        "email": "//input[@name=\"email\"]",
+        "btn_ingresar": "//button[contains(text(), \"Ingresar\")]"
+    }
+}

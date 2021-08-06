@@ -1,0 +1,92 @@
+{
+    "loading_screen": "//div[starts-with(@class, \"FullSpinner_overlay\")]", 
+    "loading_screen_2": "//div[starts-with(@class, \"ReactModal__Overlay ReactModal__Overlay--after-open FullSpinner_overlay\")]", 
+    "pagos_section": "//h3[contains(text(), \"Elige un medio de pago\")]",
+    "medios_pago": {
+        "tarjeta_ripley": "//div[starts-with(@class, \"RipleyPaymentMethod_paymentMethodLabel\")]",
+        "tarjeta_ripley_tc": "//div[starts-with(@class, \"TransactionCompleteRipleyPaymentMethod_paymentMethodLabel\")]",
+        "tarjeta_credito": "//div[starts-with(@class, \"TransactionCompletePaymentMethod_paymentMethodLabel\")]",
+        "tarjeta_credito_rechazar": "//div[starts-with(@class, \"TransactionCompletePaymentMethod_paymentMethodLabel\")]",
+        "credito_no_trans_complete": "//div[starts-with(@class, \"WebpayCreditPaymentMethod_paymentMethodLabel\")]",
+        "tarjeta_debito": "//div[starts-with(@class, \"WebpayDebitPaymentMethod_paymentMethodLabel\")]",
+        "gifcard_empresas": "//div[starts-with(@class, \"GiftCardPaymentMethod_paymentMethodLabel\")]"
+    },
+    "miga_pan": {
+        "despacho": "//nav//div[contains(text(), \"Despacho\")]"
+    },
+    "doc_tributario": {
+        "boleta": "//label[contains(text(), \"Boleta\")]",
+        "factura": "//label[contains(text(), \"Factura\")]",
+        "btn_modificar_factura": "//button[contains(text(), \"Modificar\")]",
+        "btn_guardar": "//div[starts-with(@class, \"AddressForm_buttonContainer\")]//button[contains(text(), \"Guardar\")]"
+    },
+    "add_factura": {
+        "rut": "//input[@name=\"companyRut\"]",
+        "nombre": "//input[@name=\"companyName\"]",
+        "giro": "//div[@id=\"commercialActivity\"]",
+        "direccion": "//input[@name=\"auto\"]",
+        "calle": "//input[@placeholder=\"Ejem: Avenida Grande\"]",
+        "numero": "//label[contains(text(), \"Número\")]/following-sibling::div/input",
+        "departamento": "//input[@name=\"apartmentNumber\"]",
+        "region": "//option[contains(text(), \"Selecciona una región\")]/parent::select",
+        "comuna": "//option[contains(text(), \"Selecciona una comuna\")]/parent::select",
+        "codigo_telefono": "//option[contains(text(), \"02\")]/parent::select",
+        "telefono": "//input[@name=\"phone\"]",
+        "btn_continuar": "//button[@class=\"Button_button__Wyg3z Button_primary__38apQ InvoiceForm_button__1DcO3\"]",
+        "btn_cerrar": "//span[contains(text(), \"Cerrar\")]"
+    },
+    "side_bar": {
+        "subtotal": "//span[@data-id=\"cart/subtotal\"]",
+        "despacho": "//span[@data-id=\"cart/total-shipping\"]",
+        "total_normal": "//span[@data-id=\"cart/total-normal\"]",
+        "total_tarjeta_ripley": "//span[@data-id=\"cart/total-ripley-card\"]",
+        "btn_modificar_compra": "//div[starts-with(@class, \"Cart_totals\")]//a[contains(text(), \"Modificar compra\")]",
+        "btn_agregar_mas_productos": "//div[starts-with(@class, \"Cart_totals\")]//a[contains(text(), \"Agregar más productos\")]",
+        "btn_continuar": "//button[starts-with(@class, \"ContinueButton_continueButton\")]",
+        "descuentos": "//span[contains(text(), \"Descuentos:\")]",
+        "valor_descuento": "//span[@data-id=\"cart/total-discounts\"]",
+        "descuento_gold": "//span[contains(text(), \"Descuento Gold:\")]",
+        "valor_descuento_gold": "//span[@data-id=\"cart/gold-discounts\"]"
+    },
+    "datos_pago": {
+        "tarjeta_ripley": {
+            "numero_tarjeta": "cardnumber",
+            "numero_tarjeta_tc": "cardNumber",
+            "mes": "expirationMonth",
+            "mes_anio_tc": "expiry", 
+            "anio": "//option[contains(text(), \"Año\")]/parent::select",
+            "cvv": "//input[@data-id=\"payment-methods/ripley-card-cvv\"]",
+            "cvv_tc": "//input[@id=\"cvv\"]",
+            "aceptar": "//div[starts-with(@class, \"RipleyCardForm_control\")]/button",
+            "aceptar_tc": "//button[contains(text(),'Aceptar')]",
+            "aceptar_tcg": "//button[contains(text(),'Continuar')]",
+            "diferido": "//label[contains(text(), \"Pago diferido\")]/following-sibling::div/select",
+            "cuotas": "//label[contains(text(), \"Número de pagos\")]/following-sibling::div/select"
+        },
+        "tarjeta_credito_ripley": {
+            "numero_tarjeta_credito": "cardNumber",
+            "fecha_expiracion": "expiry",
+            "mes_vencimiento": "expirationMonth",
+            "annio_vencimiento": "//select[@id=\"expirationMonth\"]/parent::div/following-sibling::div/select",
+            "cod_seg": "cvc",
+            "recordar_tarjeta": "rememberCard",
+            "btn_aceptar": "//button[starts-with(@class, \"Button_default\")]",
+            "cuotas_credito": "//select[@id=\"installments\"]"
+        },
+        "gifcard_empresas": {
+            "numero": "//input[@name=\"giftCardNumber\"]",
+            "clave": "//input[@name=\"giftCardPassword\"]",
+            "btn_validar": "//button[contains(text(), \"Validar\")]",
+            "btn_usar_giftcard": "//div[starts-with(@class, \"GiftCardForm_control\")]/button[contains(text(), \"Usar Gift Card\")]"
+        }
+    },
+    "wp_debito":{
+        "btn_debito":"//button[@id=\"debito\"]",
+        "btn_prepago":"//button[@id=\"prepago\"]"
+    },
+    "mobile": {
+        "btn_continuar": "//div[starts-with(@class, \"BarBottom_container\")]//button[starts-with(@class, \"ContinueButton_continueButton\")]"
+    }
+
+
+}

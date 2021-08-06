@@ -1,0 +1,35 @@
+{
+    "mensaje_validacion": "//h1[contains(text(), \"Por seguridad validaremos tu medio de pago con Webpay\")]",
+    "msg_continuar": "//h1[contains(text(), \"Por seguridad validaremos tu medio de pago con Webpay\")]/following-sibling::button[contains(text(), \"Continuar\")]",
+    "datos_pago": {
+        "tarjeta_credito_transbank": {
+            "valor_a_pagar": "//div[@class=\"row header-resume-detail\"]//h2",
+            "numero_tarjeta": "card-number",
+            "mes_venc": "fechaExpiracion",
+            "annio_venc": "fechaExpiracion",
+            "mesannio_venc":"card-exp",
+            "cod_seguridad": "card-cvv",
+            "btn_continuar": "//button[contains(text(), \"Pagar\")]",
+            "cuotas": "//p[contains(text(), \"WP NORMAL CREDITO\")]/following-sibling::select",
+            "tb_rut": "rutClient",
+            "tb_clave": "passwordClient",
+            "tb_aceptar": "//input[@value=\"Aceptar\"]",
+            "tb_continuar": "//input[@value=\"Continuar\"]"
+        },
+        "tarjeta_debito": {
+            "valor_a_pagar": "//div[@class=\"row header-resume-detail\"]//h2",
+            "select_banco": "//button[@class=\"combobox-button\"]",
+            "test_banco": "//*[contains(text(),\"TEST COMMERCE BANK\")]",
+            "numero_tarjeta": "//input[@formcontrolname=\"pan\"]",
+            "mes_venc": "//select[@name=\"month\"]",
+            "annio_venc": "//select[@name=\"year\"]",
+            "cod_seguridad": "//input[@name=\"cvv\"]",
+            "btn_pagar": "//button[@class=\"submit\"]",
+            "cuotas": "//p[contains(text(), \"WP NORMAL CREDITO\")]/following-sibling::select",
+            "tb_rut": "rutClient",
+            "tb_clave": "passwordClient",
+            "tb_aceptar": "//input[@value=\"Aceptar\"]",
+            "tb_continuar": "//input[@value=\"Continuar\"]"
+        }
+    }
+}

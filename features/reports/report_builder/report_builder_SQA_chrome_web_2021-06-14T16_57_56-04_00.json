@@ -1,0 +1,110 @@
+[
+  {
+    "id": "f02-caja-de-busqueda",
+    "uri": "features/test/qmetry/F02_Buscar.feature",
+    "keyword": "Feature",
+    "name": "F02 Caja de Busqueda",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "f02-caja-de-busqueda;tc01-validar-al-buscar-sku-existente-se-muestre-ficha-del-producto-bla-bla",
+        "keyword": "Scenario",
+        "name": "TC01 Validar al buscar SKU existente se muestre ficha del producto BLA BLA",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "session not created: This version of ChromeDriver only supports Chrome version 89\nCurrent browser version is 91.0.4472.101 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome (Selenium::WebDriver::Error::SessionNotCreatedError)\n0   chromedriver                        0x000000010e39cb59 chromedriver + 2595673\n1   chromedriver                        0x000000010ea50b33 chromedriver + 9624371\n2   chromedriver                        0x000000010e14c773 chromedriver + 169843\n3   chromedriver                        0x000000010e170bf6 chromedriver + 318454\n4   chromedriver                        0x000000010e16cdc4 chromedriver + 302532\n5   chromedriver                        0x000000010e16a032 chromedriver + 290866\n6   chromedriver                        0x000000010e19d234 chromedriver + 500276\n7   chromedriver                        0x000000010e1984f3 chromedriver + 480499\n8   chromedriver                        0x000000010e172cd6 chromedriver + 326870\n9   chromedriver                        0x000000010e173ba7 chromedriver + 330663\n10  chromedriver                        0x000000010e36ab09 chromedriver + 2390793\n11  chromedriver                        0x000000010e377bcc chromedriver + 2444236\n12  chromedriver                        0x000000010e3776ee chromedriver + 2442990\n13  chromedriver                        0x000000010e351832 chromedriver + 2287666\n14  chromedriver                        0x000000010e37863f chromedriver + 2446911\n15  chromedriver                        0x000000010e360299 chromedriver + 2347673\n16  chromedriver                        0x000000010e38f8b9 chromedriver + 2541753\n17  chromedriver                        0x000000010e3a2008 chromedriver + 2617352\n18  libsystem_pthread.dylib             0x00007fff2056c950 _pthread_start + 224\n19  libsystem_pthread.dylib             0x00007fff2056847b thread_start + 15\n./features/support/env.rb:167:in `new'\n./features/support/env.rb:167:in `get_driver'\n./features/support/env.rb:34:in `Before'",
+              "duration": 2038108000
+            },
+            "status": "failed",
+            "duration": 2038108000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Abro la pagina de ripley en ambiente &quot;prd&quot; de &quot;cl&quot; &quot;SIMPLE_TEST_QMETRY_01&quot;",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:1"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "And ",
+            "name": "Verifico se muestre Home princi++pal",
+            "line": 5,
+            "match": {
+              "location": "features/test/qmetry/F02_Buscar.feature:5"
+            },
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            },
+            "status": "undefined",
+            "duration": 0
+          },
+          {
+            "keyword": "When ",
+            "name": "Busco producto &quot;Prod Ripley&quot;",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:112"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "Then ",
+            "name": "Verifico que se muestren resultados de la busqueda ingresada &quot;Sku&quot;",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:128"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `screenshot' for nil:NilClass (NoMethodError)\n./features/tools/Tools.rb:192:in `salvar_pantalla'\n./features/support/env.rb:46:in `After'",
+              "duration": 344000
+            },
+            "status": "failed",
+            "duration": 344000
+          }
+        ],
+        "status": "failed",
+        "duration": 2038452000
+      }
+    ],
+    "status": "broken",
+    "duration": 2038452000
+  }
+]

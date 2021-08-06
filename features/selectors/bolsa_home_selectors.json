@@ -1,0 +1,16 @@
+{
+    "btn_bolsa": "//li[@class=\"ripley-header__shopping-bag-container\"]//a",
+    "bolsa_vacia": "//p[contains(text(), \"Tu bolsa está vacía\")]",
+    "list_productos": "//div[@class=\"shopping-bag-item\"]",
+    "btn_delete": "//div[@class=\"shopping-bag-item\"]//button[@title=\"Quitar producto\"]",
+    "bag_loaging": "//div[@class=\"shopping-bag-loading-screen\"]",
+    "btn_cerrar": "//button[@class=\"btn btn-outline\"]",
+    "btn_cerrar_empty": "//button[@class=\"btn btn-ripley\"]",
+    "btn_ir_bolsa": "//a[@class=\"btn btn-ripley\"]",
+    "subtotal": "//div[@class=\"cart-summary\"]//div[contains(text(), \"Subtotal\")]/following-sibling::div",
+    "total_normal": "//div[@class=\"cart-summary-row cart-total\"]//div[contains(text(), \"Total Normal\")]/following-sibling::div",
+    "total_ripley": "//div[@class=\"cart-summary-row cart-total is-offer\"]//div[contains(text(), \"Total Tarjeta Ripley\")]/following-sibling::div",
+    "mensaje_Chat": "//td[text()=\"Chatea con un Consultor Samsung\"]",
+    "minimizar_Chat":"//span[@type=\"Icon--dash\"]",
+    "pop_up_ir_a_la_bolsa":"//a[text()=\"Ir a la bolsa\"]"
+}

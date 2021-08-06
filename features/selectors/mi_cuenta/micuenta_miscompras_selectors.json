@@ -1,0 +1,11 @@
+{
+    "title": "//h5[contains(text(), \"Aquí podrás encontrar los estados de todas tus compras.\")]",
+    "title_new": "//h4[contains(text(), \"Aún no has realizado compras\")]",
+    "list_miscompras":"//div[contains(@class, \"MuiAccordionDetails-root\")]",
+    "loading":"//img[@src=\"/static/media/loader.695dd2a3.gif\"]",
+    "ListadoCompras":"//div[@style=\"padding-top: 30px;\"]",
+    "SeguirCompra":"//div[@class=\"MuiCollapse-container MuiCollapse-entered\"]//span[contains(text(), \"Seguir mi compra\")]",
+    "ValidacionTraking":"//b[text()=\"Creación Orden de Compra\"]",
+    "form_report_inconveniente": "//p[contains(text(), \"Selecciona el motivo de tu inconveniente:\")]",
+    "opc_compras_realizadas": "//span[@class=\"MuiButton-label\"][contains(text(), \"Compras realizadas\")]"
+}

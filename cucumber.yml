@@ -1,0 +1,212 @@
+#SIMPLE CHILE
+#Remote from docker
+simple_staging_bloq_web_remoteff_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=RemoteFirefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_bloq_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_staging_bloq_web_remotech_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=RemoteChrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_bloq_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Simple Web
+simple_staging_bloq_web_ff_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_staging_bloq_web_ch_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_chrome_web_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Simple Mobile
+simple_staging_bloq_mobile_new_ff_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=mobile AGENT=iphone BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE CLOSE=true --format json --out ./features/reports/json/report_simple_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_staging_bloq_mobile_new_ch_img_json: features/test/cl/simple/staging/bloqueantes DEVICE=mobile AGENT=iphone BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE CLOSE=true --format json --out ./features/reports/json/report_simple_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#QMetry upload web
+simple_staging_bloq_web_ff_img_json_qmetry: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SIMPLE-DESKTOP BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S4-Int --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+simple_staging_bloq_web_ch_img_json_qmetry: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SIMPLE-DESKTOP BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Qmetry upload mobile
+simple_staging_bloq_mobile_ff_img_json_qmetry: features/test/cl/simple/staging/bloqueantes DEVICE=mobile AGENT=iphone BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SIMPLE-MOBILE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+simple_staging_bloq_mobile_ch_img_json_qmetry: features/test/cl/simple/staging/bloqueantes DEVICE=mobile AGENT=iphone BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SIMPLE-MOBILE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S3 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#Rerun
+simple_rerun_ch: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_rerun_ff: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_WEB CLOSE=true --format json --out ./features/reports/json/report_simple_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_rerun_mobile_ff: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=mobile AGENT=iphone BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE CLOSE=true --format json --out ./features/reports/json/report_simple_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+simple_staging_bloq_ch: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=mobile AGENT=iphone BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE CLOSE=true --format json --out ./features/reports/json/report_simple_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#Rerun Qmetry upload web
+rerun_simple_staging_bloq_web_ff_img_json_qmetry: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SIMPLE-DESKTOP BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+rerun_simple_staging_bloq_web_ch_img_json_qmetry: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Qmetry upload mobile
+rerun_simple_staging_bloq_mobile_new_ff_img_json: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=mobile AGENT=iphone BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT= --format json --out ./features/reports/json/report_simple_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+rerun_simple_staging_bloq_mobile_new_ch_img_json: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=mobile AGENT=iphone BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=SIMPLE_MOBILE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S3 --format json --out ./features/reports/json/report_simple_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#qmetry_meta_1
+
+#web
+meta1_navegacion_web_ff: features/test/cl/simple/staging/bloqueantes --tags "not @no_meta1" DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_Web BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+meta1_navegacion_web_ch: features/test/cl/simple/staging/bloqueantes --tags "not @no_meta1" DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_Web BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#mobile
+meta1_navegacion_mob_ff: features/test/cl/simple/staging/bloqueantes --tags "not @no_meta1" DEVICE=mobile AGENT=iphone BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_mobile BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+meta1_navegacion_mob_ch: features/test/cl/simple/staging/bloqueantes --tags "not @no_meta1" DEVICE=mobile AGENT=iphone BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_mobile BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#smoke test
+#Web
+smoke_test_staging_bloq_web_ff: features/test/cl/simple/staging/bloqueantes --tags @smoke_test DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SMOKE-TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#Mobile
+smoke_test_staging_bloq_mob_ch: features/test/cl/simple/staging/bloqueantes --tags @smoke_test DEVICE=mobile AGENT=iphone BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SMOKE-TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#Carga escenario a qmetry
+rerun_navegacion_web_ff: features/test/cl/simple/staging/bloqueantes --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_Web BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#produccion qmetry meta 1
+#web
+meta1_navegacion_prd_web_ff: features/test/cl/simple/prd/bloqueantes --tags "not @no_meta1" DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Meta_1_Navegacion_Web BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-29 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#smoke test
+#Web
+smoke_test_prd_bloq_web_ff: features/test/cl/simple/prd/bloqueantes --tags @smoke_test DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=SMOKE-TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+
+#perfil Mi Cuenta Qmetry
+meta1_mi_cuenta_web_ff: features/test/cl/mi_cuenta/prd DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=Mi_Cuenta_Web BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE=SAQQ-TR-91 SPRINT=Q2-S2 --format json --out ./features/reports/json/report_qmetry_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+
+
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#CHECKOUT CHILE 
+#Remote from docker
+chkout_bloq_web_remoteff_img_json: features/test/cl/checkout/bloqueantes DEVICE=web BROWSER=RemoteFirefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=CHECKOUT CLOSE=true --format json --out ./features/reports/json/report_chkout_bloq_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_bloq_web_remotech_img_json: features/test/cl/checkout/bloqueantes DEVICE=web BROWSER=RemoteChrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=CHECKOUT CLOSE=true --format json --out ./features/reports/json/report_chkout_bloq_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Local E2E
+chkout_e2e_web_ff_img_json: features/test/cl/checkout/e2e DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_web_ch_img_json: features/test/cl/checkout/e2e DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_mobile_ff_img_json: features/test/cl/checkout/e2e DEVICE=mobile AGENT=iphone BROWSER=firefox  ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_mobile_ch_img_json: features/test/cl/checkout/e2e DEVICE=mobile AGENT=iphone BROWSER=chrome  ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#QMetry upload
+chkout_e2e_web_ff_img_json_qmetry: features/test/cl/checkout/e2e DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_chkout_e2e_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_web_ch_img_json_qmetry: features/test/cl/checkout/e2e DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_chkout_e2e_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_mobile_ff_img_json_qmetry: features/test/cl/checkout/e2e DEVICE=mobile AGENT=iphone BROWSER=firefox  ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_chkout_e2e_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_e2e_mobile_ch_img_json_qmetry: features/test/cl/checkout/e2e DEVICE=mobile AGENT=iphone BROWSER=chrome  ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_chkout_e2e_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Rerun
+chkout_rerun_ch: features/test/cl/checkout/e2e --tags @rerun DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+chkout_rerun_ff: features/test/cl/checkout/e2e --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=CHECKOUT_E2E CLOSE=true --format json --out ./features/reports/json/report_chkout_e2e_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#MONITOREO E2E CHILE
+#Remote from docker
+monitoreo_prd_cl_web_ff_remote_report: features/test/monitoreo/cl DEVICE=web BROWSER=RemoteFirefox REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_web_ch_remote_report: features/test/monitoreo/cl DEVICE=web BROWSER=RemoteChrome REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+#Local E2E
+monitoreo_prd_cl_web_ff_report: features/test/monitoreo/cl DEVICE=web BROWSER=firefox REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_web_ch_report: features/test/monitoreo/cl DEVICE=web BROWSER=chrome REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_mobile_ff_report: features/test/monitoreo/cl DEVICE=mobile AGENT=iphone BROWSER=firefox REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_mobile_ch_report: features/test/monitoreo/cl DEVICE=mobile AGENT=iphone BROWSER=chrome REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true --format json --out ./features/reports/json/report_monitoreo_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+#QMetry upload
+monitoreo_prd_cl_web_ff_report_qmetry: features/test/monitoreo/cl DEVICE=web BROWSER=firefox REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_monitoreo_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_web_ch_report_qmetry: features/test/monitoreo/cl DEVICE=web BROWSER=chrome REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_monitoreo_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_mobile_ff_report_qmetry: features/test/monitoreo/cl DEVICE=mobile AGENT=iphone BROWSER=firefox REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true QMETRY=true EJECUTOR=mhondarm --format json --out ./features/reports/json/report_monitoreo_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+monitoreo_prd_cl_mobile_ch_report_qmetry: features/test/monitoreo/cl DEVICE=mobile AGENT=iphone BROWSER=chrome REPORT=true PROJECT=MONITOREO_PRD SCREENSHOT=true ATTACH=true CLOSE=true QMETRY=true EJECUTOR=mhondarm --format json --out ./features/reports/json/report_monitoreo_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+#Rerun
+monitoreo_rerun_ch: features/test/monitoreo/cl --tags @rerun DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MONITOREO_PRD CLOSE=true --format json --out ./features/reports/json/report_monitoreo_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+monitoreo_rerun_ff: features/test/monitoreo/cl --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MONITOREO_PRD CLOSE=true --format json --out ./features/reports/json/report_monitoreo_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#MI CUENTA
+#Local 
+micuenta_web_ff_img_json: features/test/cl/mi_cuenta/prd DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_web_ch_img_json: features/test/cl/mi_cuenta/prd DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_mobile_ff_img_json: features/test/cl/mi_cuenta/qa DEVICE=mobile AGENT=iphone BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_mobile_ch_img_json: features/test/cl/mi_cuenta/qa DEVICE=mobile AGENT=iphone BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#QMetry upload
+micuenta_web_ff_img_json_qmetry: features/test/cl/mi_cuenta/qa DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true QMETRY=true  --format json --out ./features/reports/json/report_mi_cuenta_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_web_ch_img_json_qmetry: features/test/cl/mi_cuenta/qa DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true QMETRY=true  --format json --out ./features/reports/json/report_mi_cuenta_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_mobile_ff_img_json_qmetry: features/test/cl/mi_cuenta/qa DEVICE=mobile AGENT=iphone BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_mi_cuenta_mobile_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_mobile_ch_img_json_qmetry: features/test/cl/mi_cuenta/qa DEVICE=mobile AGENT=iphone BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true QMETRY=true --format json --out ./features/reports/json/report_mi_cuenta_mobile_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+#Rerun
+micuenta_rerun_ch: features/test/cl/mi_cuenta/qa --tags @rerun DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+micuenta_rerun_ff: features/test/cl/mi_cuenta/qa --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#Produccion
+micuenta_prd_web_ff_img_json: features/test/cl/mi_cuenta/prd DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=MI_CUENTA CLOSE=true --format json --out ./features/reports/json/report_mi_cuenta_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#RERUN 
+##DESKTOP
+rerun_ff: --tags @rerun DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RERUN CLOSE=true --format json --out ./features/reports/json/report_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+rerun_ch: --tags @rerun DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RERUN CLOSE=true --format json --out ./features/reports/json/report_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#MOBILE
+rerun_ff_mob: --tags @rerun DEVICE=mobile BROWSER=firefox AGENT=iphone SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RERUN CLOSE=true --format json --out ./features/reports/json/report_rerun_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+rerun_ch_mob: --tags @rerun DEVICE=mobile BROWSER=chrome AGENT=iphone SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RERUN CLOSE=true --format json --out ./features/reports/json/report_rerun_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#QMETRY Concept Test
+qmetry_web_ch_img_json_qmetry: features/test/qmetry DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=PRUEBA BOARD=SAQQ EJECUTOR=mhondarm CLOSE=true QMETRY=true TESTCYCLE= SPRINT=1 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+qmetry_web_ch_img_json_qmetry_test: features/test/qmetry DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=PRUEBA BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=1 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#Work In Progress
+wip_web_ff: --tags @wip DEVICE=web BROWSER=firefox REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false
+wip_web_ch: --tags @wip DEVICE=web BROWSER=chrome REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false
+wip_web_ie: --tags @wip DEVICE=web BROWSER=ie REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false
+wip_web_sf: --tags @wip DEVICE=web BROWSER=safari REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false
+wip_web_headless: --tags @wip DEVICE=web BROWSER=headless REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false
+wip_web_ff_remote: --tags @wip DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=true
+wip_web_ch_remote: --tags @wip DEVICE=web BROWSER=RemoteChrome REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=true
+wip_web_ff_remote_report: --tags @wip DEVICE=web BROWSER=RemoteFirefox REPORT=true PROJECT=WIP_REMOTE SCREENSHOT=true ATTACH=false CLOSE=false --expand --format json --out ./features/reports/json/report_firefox_remote_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+wip_web_ff_publish: --tags @wip DEVICE=web BROWSER=firefox REPORT=false PROJECT=WIP SCREENSHOT=false CLOSE=false --publish CUCUMBER_PUBLISH_ENABLED=true
+
+# Geneacion de reportes sin screenshot 
+wip_web_ff_json: --tags @wip DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=false REPORT=true PROJECT=WIP CLOSE=false --expand --format json --out ./features/reports/json/report_firefox_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+wip_web_ch_json: --tags @wip DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=false REPORT=true PROJECT=WIP CLOSE=false --expand --format json --out ./features/reports/json/report_chrome_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+# Geneacion de reportes con screenshot 
+wip_web_ff_json_img: --tags @wip DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=WIP CLOSE=true --expand --format json --out ./features/reports/json/report_firefox_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+wip_web_ch_json_img: --tags @wip DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=WIP CLOSE=true --expand --format json --out ./features/reports/json/report_chrome_wip_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json
+
+#mobile
+wip_mob_iphone_ff: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=iphone CLOSE=false
+wip_mob_ipad_ff: --tags @wip DEVICE=tablet BROWSER=firefox AGENT=ipad CLOSE=false
+wip_mob_android_ff: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=android_phone CLOSE=false
+wip_mob_tablet_ff: --tags @wip DEVICE=tablet BROWSER=firefox AGENT=android_tablet CLOSE=false
+
+wip_mob_iphone_ch: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=iphone CLOSE=false
+wip_mob_ipad_ch: --tags @wip DEVICE=tablet BROWSER=chrome AGENT=ipad CLOSE=false
+wip_mob_android_ch: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=android_phone CLOSE=false
+wip_mob_tablet_ch: --tags @wip DEVICE=tablet BROWSER=chrome AGENT=android_tablet CLOSE=false
+
+wip_mob_iphone_ff_rep: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=iphone ORIENTATION=portrait CLOSE=false  --format html --out ./features/reports/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_ipad_ff_rep: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=ipad ORIENTATION=portrait CLOSE=false --format html --out ./features/reports/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_android_ff_rep: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=android_phone ORIENTATION=portrait CLOSE=false --format html --out ./features/reports/html/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_tablet_ff_rep: --tags @wip DEVICE=mobile BROWSER=firefox AGENT=android_tablet ORIENTATION=portrait CLOSE=false --format html --out ./features/reports/html/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+
+wip_mob_iphone_ch_rep: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=iphone ORIENTATION=portrait CLOSE=false --format html --out ./features/reports/html/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_ipad_ch_rep: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=ipad ORIENTATION=portrait CLOSE=false --format html --out ./features/reports/html/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_android_ch_rep: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=android_phone ORIENTATION=portrait CLOSE=false --format html --out ./features/html/reports/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+wip_mob_tablet_ch_rep: --tags @wip DEVICE=mobile BROWSER=chrome AGENT=android_tablet ORIENTATION=portrait CLOSE=false --format json --out ./features/json/reports/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json --format html --out ./features/reports/html/report_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.html
+
+#Jenkins Profiles
+#Full
+chkout_bloq_web_remoteff_jenkins: features/test/cl/checkout/e2e DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=CHECKOUT_E2E SCREENSHOT=true ATTACH=false CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+simple_bloq_web_remoteff_jenkins: features/test/cl/simple/staging/bloqueantes DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=SIMPLE SCREENSHOT=true ATTACH=false CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+micuenta_bloq_web_remoteff_jenkins: features/test/cl/mi_cuenta/qa DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=MICUENTA SCREENSHOT=true ATTACH=false CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+matrix_bloq_web_remoteff_jenkins: features/test/monitoreo/cl --tags @matrix DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=MATRIX SCREENSHOT=true ATTACH=false CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+monitoreo_bloq_web_remoteff_jenkins: features/test/monitoreo/cl DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=MONITORIO_PRD SCREENSHOT=true ATTACH=false CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+monitoreo_prd_cl_mobile_ff_report_jenkins: features/test/monitoreo/cl DEVICE=mobile AGENT=iphone BROWSER=RemoteFirefox REPORT=true PROJECT=MONITOREO_PRD_MOBILE SCREENSHOT=true ATTACH=true CLOSE=true --expand --format json --out ./features/reports/json/cucumber.json
+
+#wip
+wip_web_ff_remote_jenkins: --tags @wip DEVICE=web BROWSER=RemoteFirefox REPORT=false PROJECT=WIP_REMOTE SCREENSHOT=true ATTACH=false CLOSE=false --expand --format json --out ./features/reports/json/cucumber.json
+wip_web_ch_remote_jenkins: --tags @wip DEVICE=web BROWSER=RemoteChrome REPORT=false PROJECT=WIP_REMOTE SCREENSHOT=true ATTACH=false CLOSE=false --expand --format json --out ./features/reports/json/cucumber.json
+
+#*********************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#rphone
+rphone_staging_web_ff_img_json: features/test/cl/rphone DEVICE=web BROWSER=firefox SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RPHONE CLOSE=true --format json --out ./features/reports/json/report_rphone_web_firefox_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+rphone_staging_web_ch_img_json: features/test/cl/rphone DEVICE=web BROWSER=chrome SCREENSHOT=true ATTACH=true REPORT=true PROJECT=RPHONE CLOSE=true --format json --out ./features/reports/json/report_rphone_chrome_web_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#Qmetry rphone
+rphone_staging_web_ff_img_json_qmetry: features/test/cl/rphone DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+rphone_staging_web_ch_img_json_qmetry: features/test/cl/rphone DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=RPHONE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+
+#Qmetry rphone rerun
+rerun_rphone_staging_web_ff_img_json_qmetry: features/test/cl/rphone --tags @rerun DEVICE=web BROWSER=firefox ATTACH=true SCREENSHOT=true REPORT=true PROJECT=TEST BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 
+rerun_rphone_staging_web_ch_img_json_qmetry: features/test/cl/rphone --tags @rerun DEVICE=web BROWSER=chrome ATTACH=true SCREENSHOT=true REPORT=true PROJECT=RPHONE BOARD=SAQQ EJECUTOR=pvalenzuelag CLOSE=true QMETRY=true TESTCYCLE= SPRINT=2 --format json --out ./features/reports/json/report_qmetry_web_chrome_cl_<%= Time.now.strftime("%Y-%m-%d_%H.%M.%S") %>.json 

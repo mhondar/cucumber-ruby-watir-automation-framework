@@ -1,0 +1,114 @@
+[
+  {
+    "id": "f02-caja-de-busqueda",
+    "uri": "features/test/qmetry/F02_Buscar.feature",
+    "keyword": "Feature",
+    "name": "F02 Caja de Busqueda",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "f02-caja-de-busqueda;tc01-validar-al-buscar-sku-existente-se-muestre-ficha-del-producto-bla-bla",
+        "keyword": "Scenario",
+        "name": "TC01 Validar al buscar SKU existente se muestre ficha del producto BLA BLA",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@storykey=SAQQ-1",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1826001000
+            },
+            "status": "passed",
+            "duration": 1826001000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Abro la pagina de ripley en ambiente &quot;prd&quot; de &quot;cl&quot; &quot;SIMPLE_TEST_QMETRY_01&quot;",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4249487000
+            },
+            "status": "passed",
+            "duration": 4249487000
+          },
+          {
+            "keyword": "And ",
+            "name": "Verifico se muestre Home princi++pal",
+            "line": 6,
+            "match": {
+              "location": "features/test/qmetry/F02_Buscar.feature:6"
+            },
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            },
+            "status": "undefined",
+            "duration": 0
+          },
+          {
+            "keyword": "When ",
+            "name": "Busco producto &quot;Prod Ripley&quot;",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:112"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          },
+          {
+            "keyword": "Then ",
+            "name": "Verifico que se muestren resultados de la busqueda ingresada &quot;Sku&quot;",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/tienda_virtual/home_steps.rb:128"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 928420000
+            },
+            "status": "passed",
+            "duration": 928420000
+          }
+        ],
+        "status": "undefined",
+        "duration": 7003908000
+      }
+    ],
+    "status": "incomplete",
+    "duration": 7003908000
+  }
+]

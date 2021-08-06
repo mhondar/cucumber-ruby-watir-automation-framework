@@ -1,0 +1,55 @@
+{
+    "titulo_prebolsa":"//*[@id=\"shopping-bag-slideout\"]/div/div/div/div/div[1]/ul/li[1]/a",
+    "titulo_bolsa":"/html/body/div[9]/div/div/div[1]/header",
+    "loading_screen": "//div[@class=\"new-cart shopping-bag-loading-screen\"]",
+    "list_product_items": "//div[@class=\"shopping-bag-item-row new-shopping-bag\"]",
+    "empty_bag": "//div[@class=\"cart-error is-empty\"]",
+    "shopping_bag_item": {
+        "stepper": {
+            "btn_add": "//button[@class=\"stepper-control stepper-control-increase\"]",
+            "lbl_cant": "//div[@class=\"stepper-value\"]",
+            "btn_dec": "//button[@class=\"stepper-control stepper-control-decrease\"]"
+        },
+        "card_product": {
+            "prod_name": "//div[@class=\"cart-product-info-name\"]",
+            "sku": "//div[@class=\"cart-product-info-sku\"]",
+            "precio_unit": "//td[contains(text(), \"Precio unidad\")]/following-sibling::td",
+            "precio_ripley": "//td[contains(text(), \"Tarjeta Ripley\")]/following-sibling::td",
+            "precio_internet": "//span[contains(text(), \"Internet\")]/following-sibling::div",
+            "del_product": "//div[@class=\"shopping-bag-item-actions\"]//button[@title=\"Quitar producto\"]"
+        },
+        "extras": {
+            "input_code": "/html/body/div[9]/div/div/div[2]/aside/div/div[1]/div[2]/div/div/div/input",
+            "btn_aplicar": "//button[@title=\"Aplicar código\"]",
+            "descuento_aplicado": "//span[@class=\"code-name\"]", 
+            "quitar_cupon": "//button[contains(text(), \"Quitar\")]",
+            "btn_rclubes": "//button[@class=\"btn btn-block ClubModalWrapper__Button\"]",
+            "input_code_rclubes": "//form[@class=\"CodeForm__Form\"]//input[@name=\"code\"]",
+            "button_acumular": "//div[@class=\"CodeForm__FormGroup\"][1]/button[@type=\"button\"]",
+            "codigo_rclubes_aplicado": "//div[@class=\"ClubModalWrapper__AppliedCodeWrapper\"]//span"
+        },
+        "resumen": {
+            "subtotal": "//div[contains(text(), \"Subtotal\")]/following-sibling::div",
+            "total_normal": "//div[contains(text(), \"Total normal\")]/following-sibling::div",
+            "total_ripley": "//div[@class=\"cart-summary-row cart-total\"]/div[2]"
+        },
+        "recomendaciones":{
+            "contenedor_recomendacion":"//div[@class=\"owl-carousel owl-theme\"]",
+            "cantidad_recomendaciones":"//div[@class=\"owl-carousel owl-theme\"]//div[@class=\"owl-item\"]",
+            "nombre_recomendacion":"//div[@class=\"recommendations-carousel recommendations-carousel-shopping-bag\"]//div[@class=\"recommendations-carousel__element quickview-details-container\"]//span[@class=\"recommendations-carousel__element__product-name\"]",
+            "btn_agregar_bolsa_recomendacion":"//div[@class=\"recommendations-carousel recommendations-carousel-shopping-bag\"]//div[@class=\"recommendations-carousel__element quickview-details-container\"]//button[text()=\"Agregar a la bolsa\"]"
+        }
+    },
+    "btn_continuar": "//button[(@id=\"btn-continue\")]",
+    "btn_guardar": "//a[@class=\"btn btn-block btn-link\"]",
+    "ripley_icon": "//h1/a[@href=\"/\"]",
+    "msg_no_disponible": "//div[@class=\"message-area message-error message-show message-hide\"]",
+    "btn_ir_a_la_bolsa":"/html/body/div[8]/div/div/div/div/div[2]/section/div/div[2]/div[2]/div[2]/a",
+    "mobile": {
+        "btn_continuar": "//a[@class=\"btn btn-ripley btn-block btn-buy\"]"
+    },
+    "popup": {
+        "btn_cerrar": "//button[@id='onesignal-slidedown-cancel-button']",
+        "contenedor": "//div[@id='onesignal-slidedown-container']"
+    }
+}

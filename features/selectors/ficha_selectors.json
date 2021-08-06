@@ -1,0 +1,67 @@
+{
+    "product_item": {
+        "error_page": "//div[@class=\"error-page\"]",
+        "prod_name": "//section[@class=\"product-header hidden-xs\"]//h1",
+        "prod_sku": "//section[@class=\"product-header hidden-xs\"]//span[@class=\"sku sku-value\"]",
+        "prod_desc": "//section[@class=\"product-header hidden-xs\"]//h2[@class=\"product-short-description\"]",
+        "precio_normal": "//dl[@class=\"prices-list\"]//dd[text()=\"Normal\"]/following-sibling::dt",
+        "precio_internet": "//dl[@class=\"prices-list\"]//dd[text()=\"Internet\"]/following-sibling::dt",
+        "precio_ripley": "//dl[@class=\"prices-list\"]//dd[text()=\"Tarjeta Ripley o Chek\"]/following-sibling::dt",
+        "descuento": "//dl[@class=\"prices-list\"]//dd[text()=\"Descuento\"]/following-sibling::dt/span[@class=\"discount-percentage\"]",
+        "ripley_puntos": "//span[contains(text(), \"acumulas\")]/following-sibling::span[1]",
+        "btn_menos": "//button[@class=\"stepper-control stepper-control-decrease\" and @title=\"Menos\"]",
+        "btn_mas": "//button[@class=\"stepper-control stepper-control-increase\" and @title=\"Más\"]",
+        "cantidad": "//div[@class=\"stepper custom-select product-quantity-input\"]//div[@class=\"stepper-value\"]",
+        "select_comuna": "//div[contains(text(), \"Selecciona tu Comuna/tienda más cercana\")]",
+        "btn_add_bolsa": "//button[@id=\"buy-button\"]",
+        "btn_ir_bolsa": "//div[@class=\"modal-product-added-actions\"]/a[@class=\"btn btn-ripley\"]",
+        "color_opcion_list": "//div[@class=\"custom-select is-pristine radio-box-wide\"]//div[@class=\"product-colors-option-outer\"]",
+        "talla_opcion_list": "//div[@class=\"custom-select is-pristine radio-box\"]//ol[@class=\"radio-items\"]//li[@class=\"radio-item js-check-product\"]",
+        "opc_extragaranty": "//section[@class=\"product-extras-block product-warranties opened\"]//div[@class=\"radio-item\"]",
+        "seguir_comprando": "//a[contains(text(), \"Seguir comprando\")]",
+        "especificaciones": "//div[@id=\"especificaciones\"]",
+        "sugerencia_cuotas": "//div[@class=\"instalment-suggestion\"]",
+        "calcular_cuotas": "//div[@class=\"instalment-simulation__label\"]",
+        "select_num_cuotas": "//div[@class=\"custom-select drop-select\"]/select",
+        "pago_mensual_form": "//span[@class=\"instalment-results__monthly\"]",
+        "costo_total_cae_form": "//span[@class=\"instalment-results__total\"]",
+        "btn_agotado": "//button[@class=\"btn-loading is-disabled btn-primary btn-loading js-buy-button\" and contains(text(), \"Agotado\")]",
+        "calificacion":"//div[@class=\"product-rating-right-side\"]",
+        "labelDespachoDisponible":"//span[text()=\"Despacho disponible.\"]",
+        "btnCambiarComuna":"//a[text()=\"Cambiar\"]",
+        "btnSelect":"//span[@class=\"Select-arrow\"]",
+        "labelSeleccionaOpciones":"//button[text()=\"Selecciona opciones\"]",
+        "btn_bolsa_productos":"//*[@id=\"ripley-sticky-header\"]/section/nav/ul/li[3]/div",
+        "container_nuevo":"//div[@class=\"RRT__container\"]",
+        "tab_descripcion": "//div[@aria-controls=\"panel-Descripción\"]",
+        "tab_especificaciones": "//div[@id=\"tab-Especificaciones\"]",
+        "tab_comentarios": "//div[@id=\"tab-Comentarios\"]",
+        "tab_garantia_legal_y_fabricante": "//div[@id=\"tab-Garantía Legal y del Fabricante\"]",
+        "carrusel_primer_Producto":"//div[@class=\"recommendations-carousel\"]//div[@class=\"owl-item\"][1]//button[text()=\"Agregar a la bolsa\"]",
+        "link_conoce_talla":"//button[text()=\"Conoce tu talla\"]",
+        "contariner_conoce_tu_talla":"//div[@class=\"product-shoes-size-container\"]", 
+        "link_guia_talla":"//button[text()=\"Guia de tallas\"]",
+        "contariner_guia_talla":"//div[@class=\"product-size-container __show\"]//h4[text()=\"Tabla de Tallas\"]"
+
+        
+    },
+    "extra_garantia_popup": {
+        "bt_garext_continuar": "//div[@class=\"product-warranties-modal__content\"]//button"
+    },
+    "mobile": {
+        "prod_sku": "//section[@class=\"product-header visible-xs\"]//span[@class=\"sku sku-value\"]",
+        "prod_name": "//section[@class=\"product-header visible-xs\"]//h1",
+        "prod_desc": "//section[@class=\"product-header visible-xs\"]//h2[@class=\"product-short-description\"]",
+        "select_color_old": "//select[starts-with(@name, \"color\")]",
+        "select_color": "//div[@class=\"custom-select is-pristine radio-box-wide\"]",
+        "select_talla_old": "//select[starts-with(@name, \"talla\")]",
+        "select_talla": "//li[@class=\"radio-item js-check-product\"]",
+        "link_guia_talla":"//button[text()= \"Guia de tallas\"]",
+        "link_conoce_talla":"//button[text()=\"Conoce tu talla\"]"
+    },
+    "popup": {
+        "btn_cerrar": "//button[@id='onesignal-slidedown-cancel-button']",
+        "contenedor": "//div[@id='onesignal-slidedown-container']"
+    },
+    "aceptar_cookie": "//div[@class=\"cookies-disclaimer\"]//button"
+}

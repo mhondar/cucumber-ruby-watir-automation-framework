@@ -1,0 +1,23 @@
+{
+  "name": "cucumber-rap",
+  "version": "1.0.0",
+  "description": "**Repositorio de Automatización de Pruebas UAT de Ripley.com**",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^3.1.1",
+    "express": "^4.17.1",
+    "nodejs": "^0.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rfernandm@bitbucket.org/ripleyx/cucumber-rap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ripleyx/cucumber-rap#readme"
+}

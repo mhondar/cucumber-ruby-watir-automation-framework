@@ -1,0 +1,180 @@
+{
+    "preprod": {
+        "tarjeta_ripley": {
+            "rut": "85449397",
+            "clave": "1234",
+            "numero": "5490700756844982",
+            "mes": "10",
+            "anio": "2021",
+            "mes_anio": "1021",
+            "cvv": "123"
+        },
+        "tarjeta_ripley_2": {
+            "rut": "124733774",
+            "clave": "1234",
+            "numero": "5490702836428372",
+            "mes": "12",
+            "anio": "2021",
+            "mes_anio": "1221",
+            "cvv": "137"
+        },
+        "tarjeta_ripley_3": {
+            "rut": "124733774",
+            "clave": "1234",
+            "numero": "5490702836428372",
+            "mes": "12",
+            "anio": "2021",
+            "mes_anio": "1221",
+            "cvv": "137"
+        },
+        "tarjeta_credito": {
+            "rut": "130274374",
+            "clave": "1234",
+            "Marca": "VISA",
+            "numero": "4051885600446623",
+            "expiracion": "1223",
+            "anio": "2023",
+            "mes": "12",
+            "cvv": "321",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "tarjeta_credito_rechazar": {
+            "rut": "140314013",
+            "clave": "1234",
+            "Marca": "VISA",
+            "numero": "4051885600446623",
+            "expiracion": "1223",
+            "anio": "2023",
+            "mes": "12",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "tarjeta_debito": {
+            "rut": "58540501",
+            "clave": "1234",
+            "numero": "4051885600446623",
+            "anio": "23",
+            "mes": "12",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "rut_tarjeta_formato": "11.111.111-1",
+            "clave_tarjeta": "123"
+        },
+        "gifcard_empresas": {
+            "rut": "58540501",
+            "clave": "1234",
+            "numero": "1129484",
+            "clave_gc": "810844"
+        }
+    },
+    "staging": {
+        "tarjeta_ripley": {
+            "rut": "400001049",
+            "clave": "avatar123",
+            "numero": "5490705012349895",
+            "mes": "06",
+            "anio": "2022",
+            "mes_anio": "0622",
+            "cvv": "123"
+        },
+        "tarjeta_credito": {
+            "rut": "212955531",
+            "clave": "1234",
+            "Marca": "VISA",
+            "numero": "4051885600446623",
+            "anio": "2023",
+            "mes": "12",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "tarjeta_debito": {
+            "rut": "212955531",
+            "clave": "1234",
+            "numero": "4051885800381679",
+            "anio": "12",
+            "mes": "2023",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "gifcard_empresas": {
+            "rut": "212955531",
+            "clave": "1234",
+            "numero": "1129484",
+            "clave_gc": "810844"
+        }
+    },
+    "prd": {
+        "tarjeta_ripley_gold": {
+            "rut": "400026769",
+            "clave": "avatar123",
+            "numero": "5490705012347324",
+            "mes": "12",
+            "anio": "2027",
+            "mes_anio": "1227",
+            "cvv": "111"
+        },
+        "tarjeta_ripley": {
+            "rut": "400001049",
+            "clave": "avatar123",
+            "numero": "5490705012349895",
+            "mes": "06",
+            "anio": "2022",
+            "mes_anio": "0622",
+            "cvv": "123"
+        },
+        "tarjeta_credito": {
+            "rut": "212955531",
+            "clave": "1234",
+            "Marca": "VISA",
+            "numero": "4051885600446623",
+            "anio": "2023",
+            "mes": "12",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "tarjeta_debito": {
+            "rut": "212955531",
+            "clave": "1234",
+            "numero": "4051885800381679",
+            "anio": "12",
+            "mes": "2023",
+            "cvv": "123",
+            "Resultado": "APROBADO",
+            "rut_tarjeta": "111111111",
+            "clave_tarjeta": "123"
+        },
+        "gifcard_empresas": {
+            "rut": "212955531",
+            "clave": "1234",
+            "numero": "1129484",
+            "clave_gc": "810844"
+        },
+        "tarjeta_ripley_micuenta":{
+            "rut": "183939866",
+            "clave": "12345678",
+            "numero": "",
+            "clave_gc": "",
+            "categoria": "Gold"
+        }     
+    },
+    "prd_pe":{
+        "tarjeta_ripley": {
+            "rut": "77899133",
+            "clave": "test123",
+            "numero": "5490705012349895",
+            "fchexp": "0622",
+            "cvv": "123"
+        }
+    }
+}

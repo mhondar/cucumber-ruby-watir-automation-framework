@@ -1,0 +1,55 @@
+# We’re using the official ruby 2.6.3 image
+FROM ruby:2.6.3
+
+RUN apt-get update \
+  && apt-get install libxi6 \
+  libnss3 \
+  libgconf-2-4 \
+  fonts-liberation \
+  libappindicator3-1 \
+  libasound2 \
+  libatk-bridge2.0-0 \
+  libatk1.0-0 \
+  libcups2 \
+  libgtk-3-0 \
+  libx11-xcb1 \
+  libxss1 \
+  lsb-release \
+  xdg-utils \
+  libxcomposite1 -y
+
+# create a new workspace folder on the docker image for our feature files.
+COPY . ./cucumber-rap
+WORKDIR /cucumber-rap
+
+# update our stock gems,
+RUN gem update
+ADD Gemfile /cucumber-rap/Gemfile
+ADD Gemfile.lock /cucumber-rap/Gemfile.lock
+
+# install our gem dependencies
+RUN gem install bundler --source http://rubygems.org 
+RUN bundle install
+RUN gem install execjs
+
+
+CMD cucumber -p wip_web_ff_remote_report
+
+#INSTRUCCIONES DE COMANDO
+
+# Crear el COntenedor
+# docker build . -t ruby-cucumber-example
+
+
+# Ejecutar el contenedor
+# docker run ruby-cucumber-example
+
+# The HTML report which is generated as a result of the test run is copied into the host system (your local).
+# docker cp docker ps -l -q:/cucumber-rap/features/reports/report_builder/report.html”
+
+# Otras instrucciones docker
+# ejecutandolo como demonio para que no se cierre
+# docker run -d cucumber-rap-test01
+
+# entrando al contenedor para poder probar desde adentro
+# docker exec -it e15da3da96b2 bash

@@ -1,0 +1,4 @@
+{
+    "btn_continuar_compra": "//button[contains(text(), \"Continuar con mi compra\")]",
+    "bolsa_vacia": "//p[contains(text(), \"Tu bolsa está vacía\")]"
+}

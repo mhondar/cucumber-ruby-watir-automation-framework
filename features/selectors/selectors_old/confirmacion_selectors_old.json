@@ -1,0 +1,5 @@
+{
+    "title_conf": "//h3[contains(text(), \"Confirmación de compra\")]",
+    "terminosycondiciones": "//label[@class=\"checkbox\"]",
+    "confirmarycomprar":"//button[@id=\"singleOrderSummary\"]"
+}

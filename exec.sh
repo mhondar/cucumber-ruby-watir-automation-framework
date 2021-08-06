@@ -1,0 +1,1 @@
+cucumber -p $1

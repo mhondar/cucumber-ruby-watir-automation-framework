@@ -1,0 +1,8 @@
+{
+    "title": "//h3[contains(text(), \"Listo! ya estamos procesando tu orden de compra \")]",
+    "num_orden": "//h3[contains(text(), \"Listo! ya estamos procesando tu orden de compra \")]/strong",
+    "btn_finalizar": "//button[starts-with(@class, \"Button_default\")]",
+    "descuentos": "//p[@data-id=\"order-summary/total-discounts\"]",
+    "codigo_rclubes": "//div[starts-with(@class, \"OrderProcessRow_ripleyClubsCode\")]/p/strong",
+    "error_modal": "//div[starts-with(@class, \"PaymentErrorModal_paymentErrorModal\")]//h2"
+}

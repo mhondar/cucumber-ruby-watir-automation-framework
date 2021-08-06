@@ -1,0 +1,15 @@
+{
+    "quickview": {
+        "btn_cerrar": "//button[@class=\"simple-modal-close-button\"]",
+        "mas_detalles": "//a[@id=\"product-page-button\"]",
+        "title_quickview": "//a[@class=\"title-quickview\"]",
+        "btn_menos": "//button[@class=\"stepper-control stepper-control-decrease\"]",
+        "btn_mas": "//button[@class=\"stepper-control stepper-control-increase\"]",
+        "lbl_cantidad": "//div[@class=\"stepper-value\"]",
+        "btn_seleciona_opciones": "//button[@disabled and contains(text(), \"Selecciona opciones\")]",
+        "color_opcion_list": "//div[@class=\"product-colors-container\"]",
+        "talla_opcion_list": "//div[@class=\"custom-select is-pristine radio-box\"]//li[@class=\"radio-item js-check-product\"]",
+        "btn_add_bolsa": "//button[@id=\"buy-button\"]"
+    },
+    "aceptar_cookie": "//div[@class=\"cookies-disclaimer\"]//button"
+}

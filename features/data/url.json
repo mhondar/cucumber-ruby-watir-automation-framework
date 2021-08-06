@@ -1,0 +1,16 @@
+{
+    "cl": {
+        "preprod": "https://Simple:acidO@preprod.ripley.cl",
+        "prd": "https://simple.ripley.cl", 
+        "staging": "https://mhondarm@ripley.com:Julio2021@staging.ripley.cl",
+        "micuenta_prd":"micuenta.ripley.cl",
+        "micuenta_qa":"https://micuenta-qa.ripley.cl/",
+        "rphone_dev": "https://rphone-dev.web.app/",
+        "rphone_staging": "https://lvicunam@ripley.com:rphone2021@staging.ripley.cl/rphone/",
+        "rphone_prd": "https://rphone-prd.web.app/"
+    },
+    "pe": {
+        "prd_pe": "https://simple.ripley.com.pe/",
+        "staging": "https://acid_test:123acid123@staging.ripley.com.pe"
+    }
+}

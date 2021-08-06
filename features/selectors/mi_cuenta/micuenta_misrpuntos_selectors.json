@@ -1,0 +1,22 @@
+{
+    "cantidadrpuntos": "//p[contains(text(),\"Hasta la fecha has acumulado:\")]",
+    "revisarBeneficios":"//div[contains(text(),\"Revisar Beneficios\")]",
+    "terminosycondiciones":"//a[contains(text(),\"Leer términos y condiciones\")]",
+    "btn_canjear": "//span[contains(text(),\"Canjear\")]",
+    "carrucel_canje_giftcard": "//p[contains(text(), \"Canjear mis Ripley Puntos Go\")]/parent::div/div/div/div/div",
+    "list_products_giftcard": "//p[contains(text(), \"Selecciona la Gift Card que quieras canjear\")]/following-sibling::div/div/div/div/div[@class=\"slick-slide slick-active slick-center slick-current\"]",
+    "beneficios": "//p[contains(text(), \"Beneficios cliente\")]",
+    "canjes_realizados": "//tbody[@class=\"MuiTableBody-root\"]",
+    "list_canjes": "//tbody[@class=\"MuiTableBody-root\"]//tr[contains(@class, \"MuiTableRow-root \")]",
+    "list_categorias_canje": "//div[@class=\"slick-track\"]/div[starts-with(@class, \"slick-slide\")]",
+    "right_arrow_old": "//div[@class=\"slick-arrow slick-next css-1erm3gx\"]",
+    "right_arrow": "svg.MuiSvgIcon-root:nth-child(3)",
+    "right_arrow_products": "//div[@class=\"slick-arrow slick-next\"]",
+    "valor_giftcard_selected": "//div[@class=\"description\"]/div[1]",
+    "btn_canjear_product_disabled": "//button[contains(text(), \"Canjear\") and @disabled]",
+    "btn_canjear_product_enabled": "//button[contains(text(), \"Canjear\")]",
+    "categ_canje_giftcard_selected_old": "//div[@class=\"MuiBox-root jss367\"]//img[@src=\"https://firebasestorage.googleapis.com/v0/b/banco-ripley-app.appspot.com/o/products%2Fimages%2F22-10-2020_12%3A35%3A47_cdf-7500.png?alt=media&token=908daea9-133e-4f6c-8f8e-de763b701d40\"]",
+    "categ_canje_giftcard_selected": "//div[@class=\"MuiPaper-root jss356 MuiPaper-elevation0 MuiPaper-rounded\"]//div/img[@src=\"https://firebasestorage.googleapis.com/v0/b/banco-ripley-app.appspot.com/o/categories%2Fimages%2F26-11-2020_17%3A54%3A02_CATEGORIA-GIFTCARDS-APP.png?alt=media&token=74b915b6-1367-451b-984d-b65d7210ba1d\"]",
+    "titulo_page_ripley_puntos_go":"//strong[contains(text(),\"Ripley Puntos Go\")]",
+    "sin_rpuntos": "//span[@class=\"MuiButton-label\"]//span[contains(text(), \"Acumular\")]"
+}

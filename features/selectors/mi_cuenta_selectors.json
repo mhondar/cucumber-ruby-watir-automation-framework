@@ -1,0 +1,61 @@
+{
+    "miga_pag": {
+        "ripley_cl": "//a[contains(text(), \"Ripley.cl\")]"
+    },
+    "mis_cupones": {
+        "menu_link": "//a[contains(text(), \"Mis cupones\")]"
+    },
+    "ripley_puntos": {
+        "menu_link": "//a[contains(text(), \"RipleyPuntos\")]"
+    },
+    "lista_deseos": {
+        "menu_link": "//a[contains(text(), \"Lista de deseos\")]"
+    },
+    "lista_direcciones": {
+        "menu_link": "//a[contains(text(), \"Lista de direcciones\")]",
+        "title_lista_direcciones": "//h1[contains(text(), \"Lista de direcciones\")]",
+        "btn_nueva_direccion": "//div[@id=\"button-card\"]",
+        "caja_direccion": "//div[@id=\"address-card\"]",
+        "btn_crear_direccion": "//button[contains(text(), \"Crear dirección\")]",
+        "input_titulo": "//input[@id=\"nickName\"]",
+        "select_region": "//select[@name=\"state\"]",
+        "select_comuna": "//select[@name=\"city\"]",
+        "select_tipo_dir": "//select[@name=\"officeAddress\"]",
+        "input_calle": "//input[@name=\"address1\"]",
+        "input_numero": "//input[@name=\"address2\"]",
+        "select_tipo_vivienda": "//select[@name=\"taxGeoCode\"]",
+        "input_dpto": "//input[@name=\"address3\"]",
+        "select_tipo_telefono": "//select[@name=\"phoneType\"]",
+        "input_celular": "//input[@name=\"mobilePhone1\"]",
+        "input_telefono": "//input[@name=\"phone1\"]",
+        "btn_crear_dir": "//button[@id=\"WC_NewAddressForm_CreateAddressBtn\"]",
+        "lbl_no_direccion_creada": "//h1[contains(text(), \"No tienes una dirección creada\")]",
+        "lbl_direccion_principal": "//p[@class=\"address-title\"]"
+    },
+    "seguimiento_compras": {
+        "menu_link": "//a[contains(text(), \"Seguimiento de compras\")]"
+    },
+    "datos_facturacion": {
+        "menu_link": "//p[@class=\"leftnav_myaccount_dotted\"]/a[contains(text(), \"Datos para Facturación\")]",
+        "rut": "//input[@name=\"rut\"]",
+        "nombre": "//input[@name=\"businessName\"]",
+        "actividad": "//select[@name=\"businessActivity\"]",
+        "calle": "//input[@name=\"address1\"]",
+        "numero": "//input[@name=\"address2\"]",
+        "dpto": "//input[@name=\"address3\"]",
+        "region": "//select[@name=\"state\"]",
+        "comuna": "//select[@name=\"city\"]",
+        "cod_telefono": "//select[@name=\"fax1\"]",
+        "num_telefono": "//input[@name=\"phone1\"]",
+        "btn_actualizar": "//a[contains(text(), \"Actualizar\")]"
+    },
+    "webpay_oneclick": {
+        "menu_link": "//a[contains(text(), \"WebPay - One Click\")]"
+    },
+    "actualiza_tus_datos": {
+        "menu_link": "//a[contains(text(), \"Actualiza tus datos\")]"
+    },
+    "claves": {
+        "menu_link": "//a[contains(text(), \"Claves\")]"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "btn_solicita_evalua": "//span[contains(text(), \"Solicitar evaluación\")]",
+    "title_ficha":"//h2[contains(text(), \"Características del celular\")]",
+    "title_plan":"//p[contains(text(), \"Contratando un plan de\")]",
+    "cant_datos_plan":"//span[contains(@class, 'MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignRight')]",
+    "cant_min_plan":"//span[contains(@class, 'MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-alignLeft')]",
+    "valor_plan":"//span[contains(text(), \"minutos\")]//parent::div//parent::div//following-sibling::div[@class]/span[contains(@class, \"MuiTypography-body1\")]",
+    "meses_plan":"//span[@class=\"MuiTypography-root MuiTypography-body2 MuiTypography-displayBlock\"]",
+    "name_prod": "//div[@class=\"MuiGrid-root MuiGrid-item\"]/h1",
+    "precio_normal": "//span[contains(text(), \"Precio Normal\")]/parent::div/span[2]",
+    "precio_descuento":"//p[contains(text(), \"Descuento\")]/parent::div/div",
+    "valor_celular_y_plan": "//p[contains(text(), \"Celular con plan\")]/parent::div/span",
+    "link_elegir_otro_plan": "//button[contains(text(), \"Elegir otro plan\")]",
+    "plan_container": "//section[contains(@class, \"MuiContainer-maxWidthLg\")]/h2",
+    "link_ver_caracteristicas": "//button[contains(text(), \"Ver Carasterísticas\")]",
+    "caracteristica_container": "//div[contains(@class, \"MuiGrid-grid-xs-true\")]/h2[contains(text(), \"Características del celular\")]"
+}

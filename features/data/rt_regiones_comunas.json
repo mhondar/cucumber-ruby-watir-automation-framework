@@ -1,0 +1,11 @@
+{
+    "Disponible": {
+        "ZONA METROPOLITANA": [
+            "Santiago",
+            "Las Condes"
+        ]
+    },
+    "No_Disponible": {
+        "ZONA NORTE": []
+    }
+}

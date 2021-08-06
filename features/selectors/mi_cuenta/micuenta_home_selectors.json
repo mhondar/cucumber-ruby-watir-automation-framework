@@ -1,0 +1,22 @@
+{
+    "barra_izquierda":{
+        "categoria_cliente":"//h2[contains(text(),\"Eres Cliente\")]/strong",
+        "rpuntos":"//div[@style=\"margin-bottom: 20px;\"]/a/div/strong",
+        "btn_micuenta_old": "//a[@href=\"/mi-cuenta\"]",
+        "btn_micuenta": "//span[contains(text(), \"Mi perfil\")]",
+        "btn_misdatos": "//span[contains(text(), \"Mi perfil\")]",
+        "btn_mispuntos":"//span[contains(text(),\"Ripley Puntos Go\")]",
+        "btn_miscompras":"//div[1]//a[@href=\"/mis-compras\"]",
+        "btn_micuentaclasica":"//div[@class=\"authenticated-content\"]//span[contains(text(),\"Mi Cuenta Clásica\")]/ancestor::a",
+        "btn_beneficios": "//span[contains(text(), \"Beneficios\")]",
+        "btn_canjes_realizados": "//span[contains(text(), \"Mis canjes realizados\")]",
+        "btn_cerrar_sesion":"//div[1]//span[contains(text(), \"Cerrar Sesión\")]",
+        "btn_direcciones":"//span[contains(text(), \"Mis direcciones\")]",
+        "btn_solicitudes_atencion":"//span[contains(text(), \"Solicitudes de atención\")]",
+        "sin_rpuntos": "//span[@class=\"MuiButton-label\"]//span[contains(text(), \"Acumular\")]"
+    },
+    "menu_superior": {
+        "menu_iconoripley": "//span[@class=\"MuiIconButton-label\"]",
+        "menu_ripleycom": "//span[contains(text(), \"Ripley.com\")]"
+    }
+}

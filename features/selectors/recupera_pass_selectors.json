@@ -1,0 +1,18 @@
+{
+    "forgot_password": {
+        "input_rut": "//input[@name=\"wc_username\"]",
+        "btn_buscar_cuenta": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "revisa_correo": "//h1[contains(text(), \"¡Revisa tu correo!\")]",
+        "correo": "//span[contains(text(), \"mho*****@ripley.com\")]",
+        "lbl_ingresa_contraseña": "//h2[contains(text(), \"Ingresa con tu contraseña temporal\")]",
+        "re_input_rut": "//input[@name=\"ws_username\"]",
+        "input_password": "//input[@name=\"password\"]",
+        "btn_ingresar": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "lbl_crear_new_pass": "//h1[contains(text(), \"Crear una nueva contraseña\")]",
+        "input_nueva_pass": "//input[@name=\"password\"]",
+        "input_rep_nueva_pass": "//input[@name=\"password2\"]",
+        "btn_guardar_pass": "//button[@class=\"btn-loading  btn-ripley\"]",
+        "lbl_cambio_passw_exito": "//p[contains(text(), \"Tu contraseña fue cambiada con éxito.\")]",
+        "btn_ir_mi_cuenta": "//button[@class=\"btn-loading  btn-ripley\"]"
+    }
+}

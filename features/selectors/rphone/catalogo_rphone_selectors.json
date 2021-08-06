@@ -1,0 +1,7 @@
+{
+    "box_prod_catalogo":"//article[@class=\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4\"]",
+    "box_equipo_plan":"//span[contains(text(), \"Celular + Plan\")]",
+    "name_prod": "//h3[@class=\"MuiTypography-root MuiTypography-h3\"]",
+    "count_product": "//button[@class=\"MuiButtonBase-root MuiCardActionArea-root\"]",
+    "title_catalogo": "//span[contains(text(), \"Celular + Plan\")]"
+}

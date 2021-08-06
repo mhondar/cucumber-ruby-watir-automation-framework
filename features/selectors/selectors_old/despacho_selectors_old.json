@@ -1,0 +1,12 @@
+{
+    "btn_continuar_compra": "//button[@id=\"WC_ShipmentDisplay_continue\"]",
+    "text_fecha_Entrega":"//span[@id=\"envioEstandarFecha_0\"]",
+    "direccion_invitado": "//input[@name=\"address1\"]",
+    "departamento_invitado" :"//select[@id=\"state\"]/option[contains(text(), \"LIMA\")]",
+    "provincia_invitado":"//select[@id=\"city\"]/option[contains(text(), \"LIMA\")]",
+    "distrito_invitado":"//select[@id=\"addressField1\"]/option[contains(text(), \"MIRAFLORES\")]",
+    "crear_direccion":"//a[contains(text(), \"Crear Dirección\")]",
+    "telefono":"//input[@name=\"mobilePhone1\"]",
+    "confirmarycontinuar":"//button[contains(text(), \"Confirmar y continuar\")]",
+    "loading":"//div[@class=\"loading\" and @style=\"display: block;\"]"
+}

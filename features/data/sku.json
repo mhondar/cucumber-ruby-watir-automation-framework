@@ -1,0 +1,256 @@
+{
+  "cl": {
+    "staging": {
+      "Disponible": [
+        "2000381872225",
+        "1062449",
+        "MPM00013716928"
+      ],
+      "Agotado": [        
+      ],
+      "Recomendaciones":
+       [
+         "2000363124854P"         
+        ],
+       "Variacion_Calzado":
+       [
+         "2000381262682"
+        ],
+      "Precio Menor 50000": [
+        "2000300353248"
+      ],
+      "Precio Menor 350000": [
+        "2000301250119P"
+      ],
+      "Precio Mayor 350000": [
+        "2000365022387P"
+      ],
+      "Internet": [
+        "2000381872225"
+      ],
+      "Ripley": [
+        "2000377722473"
+      ],
+      "Variaciones": [
+        "2000384306321"
+      ],
+      "Variacion Sin Seleccionar": [
+        "2000383748863"
+      ],
+      "Sin Variaciones": [],
+      "Con Extragarantia": [
+        "2000384495025"
+      ],
+      "Sin Extragarantia": [
+        "2038500200000"
+      ],
+      "Cuotas Sugeridas": [],
+      "Despacho a Domicilio": [
+        "2000300672028P"
+      ],
+      "Sin Despacho a Domicilio": [
+        "2000300353248",
+        "2000373575424"
+      ],
+      "Retiro en Tienda": [],
+      "Sin Retiro en Tienda": [
+        "2000300353248"
+      ],
+      "Variaciones Marketplace": [
+        "MPM00026715826"
+      ],
+      "Variacion Marketplace": [
+        "MPM00009592092"
+      ],
+      "Descuento Marketplace": [
+        "2220106"
+      ],
+      "Descuento Ripley": [
+        "2000380750029"
+      ],
+      "Tarjeta Ripley o Check MKP": [
+        "MPM00013442760"
+      ],
+      "Internet Marketplace": [
+        "1692320"
+      ],
+      "Simple Marketplace": [
+        "385185"
+      ],
+      "Simple Ripley": [
+        "2000305182218"
+      ]
+    },
+    "preprod": {
+      "PRUEBA": [
+        "2094020940000"
+      ],
+      "SKU Ripley RT": [
+        "2064300570005"
+      ],
+      "SKU Ripley STS": [
+        "2000300111183"
+      ],
+      "SKU Ripley STS + Regalo": [],
+      "SKU MKP": [
+        "MPM00000000267"
+      ],
+      "SKU Proveedor": [
+        "2000301630560",
+        "2094010490003"
+      ],
+      "Disponible": [
+        "2000301097127",
+        "2000300111183",
+        "2064300570005",
+        "2094010490003"
+      ],
+      "Agotado": [
+        "2000303566249P",
+        "MPM00000020281"
+      ],
+      "No Disponible": [
+        "MPM00000020155"
+      ],
+      "Internet": [
+        "2000300309528"
+      ],
+      "Ripley": [
+        "2000300309528"
+      ],
+      "Variaciones": [],
+      "Sin Variaciones": [
+        "2000300309528",
+        "2000303481559P"
+      ],
+      "Con Extragarantia": [
+        "2000370815042"
+      ],
+      "Sin Extragarantia": [
+        "2000303481559P",
+        "2094020940000P"
+      ],
+      "Despacho a Domicilio": [
+        "2000301097127"
+      ],
+      "Sin Despacho a Domicilio": [],
+      "Retiro en Tienda": [
+        "2064300570005",
+        "2000303476012"
+      ],
+      "Sin Retiro en Tienda": [
+        "2000301630560P",
+        "2000303481559P",
+        "2094020940000P"
+      ]
+    },
+    "prd": {
+      "Prod Ripley": [
+        "2000378558156P"
+      ],
+      "Prod MKP": [
+        "MPM00016880346"
+      ],
+      "Extragarantia": [
+        "2000349693732P"
+      ],      
+      "Sin Cyber": [
+      ],
+      "Disponible": [
+        "2000381872225"
+      ],
+      "Agotado": [
+        
+      ],
+      "Recomendaciones":
+      [
+        "2000363124854P"         
+        ],
+      "Variacion_Calzado":
+      [
+        "2000381262682"
+        ],
+      "Precio Menor 50000": [
+        "2000300353248"
+      ],
+      "Precio Menor 350000": [
+        "2000301250119P"
+      ],
+      "Precio Mayor 350000": [
+        "2000365022387P"
+      ],
+      "Internet": [
+        "2000381872225"
+      ],
+      "Ripley": [
+        "2000378387268P"
+      ],
+      "Variaciones": [
+        "2000384306321"
+      ],
+      "Variacion Sin Seleccionar": [
+        "2000383748863"
+      ],
+      "Sin Variaciones": [],
+      "Con Extragarantia": [
+        "2000384495025"
+      ],
+      "Sin Extragarantia": [
+        "2038500200000"
+      ],
+      "Cuotas Sugeridas": [],
+      "Despacho a Domicilio": [
+        "2000300672028P"
+      ],
+      "Sin Despacho a Domicilio": [
+        "2000300353248",
+        "2000373575424"
+      ],
+      "Retiro en Tienda": [],
+      "Sin Retiro en Tienda": [
+        "2000300353248"
+      ],
+      "Variaciones Marketplace": [
+        "MPM00026715826"
+      ],
+      "Variacion Marketplace": [
+        "MPM00009592092"
+      ],
+      "Descuento Marketplace": [
+        "2220106"
+      ],
+      "Descuento Ripley": [
+        "2000380750029"
+      ],
+      "Tarjeta Ripley o Check MKP": [
+        "MPM00013442760"
+      ],
+      "Internet Marketplace": [
+        "1692320"
+      ],
+      "Simple Marketplace": [
+        "385185"
+      ],
+      "Simple Ripley": [
+        "2000305182218"
+      ]
+    },
+    "pe": {
+      "prd_pe": {
+        "Variaciones": [
+          "2026231159070",
+          "2026231159087",
+          "2026231159094",
+          "2026231159100"
+        ],
+        "prod MKP": [
+          "2026231159100",
+          "2026231159094"
+        ],
+        "Ripley_Talla": [
+          "2074240937684"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "loading_screen": "//div[@class=\"shopping-bag-loading-screen\"]",
+    "loading_screen_2": "//div[starts-with(@class, \"ReactModal__Overlay ReactModal__Overlay--after-open FullSpinner_overlay\")]",
+    "error_mensage" : "//div[starts-with(@class, \"MessageArea_messageArea\")]",
+    "error_agenda": "//h1[contains(text(), \"Información no disponible\")]",
+    "main_contain": {
+        "opcion_entrega": "//h4[starts-with(@class, \"ContentHeading_heading\")]",
+        "btn_cambiar_direccion": "//button[contains(text(), \"Cambiar dirección\")]"
+    },
+    "miga_pan": {
+        "bolsa": "//nav//div[contains(text(), \"Bolsa de compra\")]",
+        "bolsa_mobile": "//a[@data-id=\"navigation/bolsa-de-compra\"]"
+    },
+    "retiro_en_tienda": {
+        "select_zona": "//label[contains(text(), \"Selecciona una zona\")]/following-sibling::div/select",
+        "selecionar_otra_tienda": "//button[contains(text(), \"Seleccionar otra tienda\")]"
+    },
+    "direcciones": {
+        "list_selector_direcciones": "//div[starts-with(@class, \"AddressSelector_address\")]/div[starts-with(@class, \"AddressSelector_radioButton\")]",
+        "nueva_direccion": "//button[contains(text(), \"Nueva dirección\")]",
+        "btn_modificar_principal": "//strong[contains(text(), \"Dirección Principal\")]/parent::label/parent::div/parent::div/following-sibling::div/button",
+        "btn_modificar_dir": "//button[contains(text(), \"Modificar dirección\")]",
+        "aplicar_guardar": "//button[contains(text(), \"Aplicar y guardar\")]"
+    },
+    "crear_direccion": {
+        "input_calle": "//label[contains(text(), \"Calle\")]/following-sibling::div/input",
+        "input_numero": "//label[contains(text(), \"Número\")]/following-sibling::div/input",
+        "input_dpto": "//label[contains(text(), \"Departamento\")]/following-sibling::div/input",
+        "select_region": "//label[contains(text(), \"Región\")]/following-sibling::div/select",
+        "select_comuna": "//label[contains(text(), \"Comuna\")]/following-sibling::div/select",
+        "select_codfijo": "//label[contains(text(), \"Teléfono fijo\")]/following-sibling::div/div/select",
+        "input_telefono": "//label[contains(text(), \"Teléfono fijo\")]/following-sibling::div/div/input",
+        "input_celular": "//label[contains(text(), \"Celular\")]/following-sibling::div/div/input",
+        "btn_crear_dir": "//button[contains(text(), \"Crear dirección\")]",
+        "id_dir_nueva": "//label[contains(text(), \"Identificador dirección\")]/following-sibling::div/input"
+    },
+    "crear_direccion_nueva": {
+        "input_direccion": "//input[@placeholder=\"Dirección\" or @placeholder=\"Ej. Cerro Colorado 5240, Las Condes, Santiago\" or @placeholder=\"Ej: Agustinas 1025, Santiago\"]",
+        "input_departamento": "//input[@placeholder=\"Ejem: 123\" or @placeholder=\"Ej: 16\"]",
+        "select_cod_telef_fijo": "//select[starts-with(@class, \"Select_select\")]",
+        "input_telefono_fijo": "//input[@data-id=\"address-form/landline-phone\"]",
+        "input_celular_nuevo": "//input[@data-id=\"address-form/cellphone\" or @placeholder=\"Ingresar 9 dígitos\"]"
+    },
+    "side_bar": {                                       
+        "bt_continuar": "//div[starts-with(@class, \"Cart_totals\")]//button[starts-with(@class, \"ContinueButton_continueButton\")]",
+        "subtotal": "//span[@data-id=\"cart/subtotal\"]",
+        "despacho": "//span[@data-id=\"cart/total-shipping\"]",
+        "total_normal": "//span[@data-id=\"cart/total-normal\"]",
+        "total_tarjeta_ripley": "//span[@data-id=\"cart/total-ripley-card\"]",
+        "btn_modificar_compra": "//div[starts-with(@class, \"Cart_totals\")]//a[contains(text(), \"Modificar compra\")]",
+        "btn_agregar_productos": "//div[starts-with(@class, \"Cart_totals\")]//a[contains(text(), \"Agregar más productos\")]",
+        "lbl_cantidad_producto": "//div[starts-with(@class, \"ShoppingItem_quantity\")]"
+    },
+    "opciones_entrega": {
+        "list_opciones": "//div[starts-with(@class, \"ShippingRadioButton_section\")]",
+        "mas_opciones": "//form[starts-with(@class, \"ShippingGroup_form\")]",
+        "dia_despacho": "//div[starts-with(@class, \"ShippingGroup_extraDates\")]/label[contains(text(), \"Día de despacho\")]/div/select",
+        "jornada_costo": "//div[starts-with(@class, \"ShippingGroup_extraDates\")]/label[contains(text(), \"Jornada y costo de despacho\")]/div/select"
+    },
+    "opciones_entrega_nueva": {
+        "caja_box_entrega": "//div[starts-with(@class, \"ShippingSchedulesSelect_boxes__E_7pt\")]"
+    },
+    "msg_no_despacho": "//div[contains(text(), \"Atencion: No hay despachos para esta Region/Comuna\")]",
+    "confirmacion_retiro": {
+        "un_tercero": {
+            "rut": "//input[@id=\"thirPartyDi\"]",
+            "nombre": "//input[@id=\"thirdPartyName\"]"
+        },
+        "celular": "//div[starts-with(@class, \"PickerFormModal_mobileInputs\")]/input[@placeholder=\"Ej: 7123 1234\"]",
+        "confirmar_continuar": "//button[contains(text(), \"Confirmar y continuar\")]"
+    },
+    "mobile": {
+        "bt_continuar": "//div[starts-with(@class, \"BarBottom_button\")]//button[starts-with(@class, \"ContinueButton_continueButton\")]"
+ 
+    }
+
+}

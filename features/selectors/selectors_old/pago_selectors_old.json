@@ -1,0 +1,11 @@
+{
+    "seccion_metodo_pago": "//div[@id=\"WC_CheckoutPaymentsAndBillingAddressf_div_2_1\"]",
+    "button_continuar" :"//button[contains(text(), \"Continuar\")]",
+    "select_tarjeta_ripley":"//span[@id=\"payMethodId_1_1_etiqueta_icono\"]",
+    "SeleccionarFactura":"//a[@class=\"Factura F_Activa\"]",
+    "SeleccionarBoleta":"//a[@class=\"Boleta B_Seleccionado\"]",
+    "RutFactura":"//input[@id=\"billingCode\"]",
+    "RazonSocialFactura":"//input[@id=\"firstName\"]",
+    "ContinuarFactura":"//button[@id=\"WC_ShopcartAddressForm_SaveBtn\"]",
+    "loading":"//div[@class=\"loading\" and @style=\"display: block;\"]"
+}    
